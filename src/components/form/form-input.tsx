@@ -1,10 +1,11 @@
-import type { FC } from "react";
+import type { FC, ReactNode } from "react";
 import { TextInput } from "react-native";
 
 interface FormInputProps {
   value: string;
   placeholder?: string;
   onChangeText: (value: string) => void;
+  className?: ReactNode;
 }
 const FormInput: FC<FormInputProps> = ({
   value,
